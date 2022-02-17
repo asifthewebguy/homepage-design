@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .logo .logoH1 {
+        @apply hidden;
+    }
+    .logo:hover .logoH1 {
+        @apply inline-flex;
+    }
+}
