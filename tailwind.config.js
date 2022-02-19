@@ -22,7 +22,18 @@ module.exports = {
             'lg': { 'min': '769px', 'max': '1024px' }, // 1024px
             'xl': { 'min': '1025px' }, // 1025px
         },
-        extend: {},
+        extend: {
+            keyframes: {
+                hatsoff: {
+                    '0%, 100 %': {
+                        transform: 'translateY(-25 % )'
+                    },
+                }
+            },
+            animation: {
+                hatsoff: 'hatsoff 1s 2',
+            },
+        },
     },
     plugins: [],
 }
