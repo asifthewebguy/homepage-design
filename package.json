@@ -2,9 +2,17 @@
     "name": "dev-server-01",
     "version": "0.0.1",
     "scripts": {
-        "start": "node app.js npx nodemon app.js npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+        "start": "node app.js",
+        "tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+        "nodemon": "nodemon --watch src app.js -e js,html,css",
+        "nodemon-tailwind": "npm-run-all --parallel nodemon tailwind",
+        "start-tailwind": "npm-run-all --parallel start tailwind",
+        "all": "npm-run-all --parallel start tailwind nodemon"
     },
     "devDependencies": {
+        "connect-livereload": "^0.6.1",
+        "livereload": "^0.9.3",
+        "npm-run-all": "^4.1.5",
         "tailwindcss": "^3.0.23"
     },
     "dependencies": {
