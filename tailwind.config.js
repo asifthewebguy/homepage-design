@@ -20,7 +20,7 @@ module.exports = {
             'sm': { 'max': '640px' }, // 640px
             'md': { 'min': '641px', 'max': '768px' }, // 768px
             'lg': { 'min': '769px', 'max': '1024px' }, // 1024px
-            'xl': { 'min': '1025px' }, // 1025px
+            'xl': { 'min': '1025px' }, // 1025px and up
         },
         extend: {
             keyframes: {
@@ -36,4 +36,4 @@ module.exports = {
         },
     },
     plugins: [],
-}
+};

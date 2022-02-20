@@ -524,10 +524,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -572,6 +568,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-4 {
@@ -643,37 +644,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: inline-flex;
 }
 
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+@-webkit-keyframes hatsoff {
+  0%, 100 % {
+    transform: translateY(-25 % );
   }
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+@keyframes hatsoff {
+  0%, 100 % {
+    transform: translateY(-25 % );
   }
 }
 
 .group:hover .group-hover\:animate-hatsoff {
-  -webkit-animation: bounce 1s 2;
-          animation: bounce 1s 2;
+  -webkit-animation: hatsoff 1s 2;
+          animation: hatsoff 1s 2;
 }
 
 @media (max-width: 640px) {

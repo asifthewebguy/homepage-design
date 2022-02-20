@@ -1,5 +1,14 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.0.23"
-  }
+    "name": "dev-server-01",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node app.js npx nodemon app.js npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.0.23"
+    },
+    "dependencies": {
+        "express": "^4.17.3",
+        "nodemon": "^2.0.15"
+    }
 }
