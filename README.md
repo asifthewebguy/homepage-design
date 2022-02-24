@@ -9,5 +9,5 @@ Just added an express js server with necessery commands.
 ### Note to self
 
 - whenever this repository is downloaded, just do an `npm install` 
-- then `npm run start`
+- then `npm run start-tailwind`
 - dont forget to have fun
